@@ -1,0 +1,79 @@
+/* Modal.css */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+  }
+  
+  .modal.show {
+    display: block;
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 500px;
+  }
+
+  .info {
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  input[type="number"], input[type="text"] {
+    font-size: 16px;
+    width: 50%;
+    margin: 5px;
+    border: 1px solid;
+  }
+  
+  .modal-btns {
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-btns button {
+    margin: 10px 0;
+    width: 95%;
+  }
+
+  input {
+    margin-left: 10px;
+  }
+
+  label:nth-of-type(2) {
+    margin-top: 10px; /* Adjust as needed */
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
